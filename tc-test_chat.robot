@@ -11,35 +11,27 @@ Login
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button   
 
 *** Test Cases ***
-TC001
+TC-Send-Message
     
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
-    Sleep    5s
-    Click Link  //*[@id="header"]/nav/ul/li[7]/a 
-    Sleep    2s 
+    Sleep    2s
+    Go To     http://127.0.0.1:8000/login
+    Sleep    1s 
     Login
-    Sleep     3s
-    Click Element    //*[@id="header"]/nav/ul/li[6]
-    Sleep    1s
-    Click Element    //*[@id="header"]/nav/ul/li[6]/ul/li[6]
-    Sleep    3s
+    Sleep     2s
+    Click Element    //*[@id="header"]/nav/ul/li[6]/a
+    Sleep    0.5s
+    Click Element    //*[@id="header"]/nav/ul/li[6]/ul/li[6]/a
+    Sleep    2s
     Input Text        //html/body/div[1]/div[1]/div[1]/input    admin
-    Sleep    2s
+    Sleep    1s
     Click Element     //html/body/div[1]/div[1]/div[2]/div[3]/div/table/tbody/tr/td[2]
-    Sleep    3s
+    sleep    1s
     Input Text    //*[@id="message-form"]/textarea    Hello Admin
-    Sleep    2s
+    Sleep    1s
     Click Button    //*[@id="message-form"]/button
-    Sleep    5s
-    Click Element    //html/body/div[1]/div[3]/div[2]/a
-    Sleep    2s
-    Click Element    //html/body/div[3]/div/div/div[3]/a[2]
-    Sleep    2s
-    Click Element    //html/body/div[1]/div[1]/div[1]/nav/nav/a[1]
-    Sleep    3s
-    Click Element    //*[@id="update-settings"]/div[2]/div[2]/span[5]
-    Sleep    2s
-    Click Element    //*[@id="update-settings"]/div[3]/input
-    Sleep    4s    
-    Close Browser
+    Sleep    2s    
+    Close Browser    
+    
+    
