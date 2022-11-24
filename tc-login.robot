@@ -8,6 +8,7 @@ ${url}        http://127.0.0.1:8000
 Login
     Input Text         //*[@id="email"]    jojo@gmail.com
     Input Password      //*[@id="password"]    123456789
+    Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button 
 
 *** Test Cases ***
