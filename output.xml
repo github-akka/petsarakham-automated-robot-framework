@@ -1,194 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221130 17:32:18.496" rpa="false" schemaversion="3">
-<suite id="s1" name="Test-Case-Chat" source="c:\Users\AVSKS\Desktop\Rb-fm-test\test-case-admin\test-case-chat.robot">
-<test id="s1-t1" name="Test-case delete conversation" line="38">
-<kw name="Chat-Page">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221201 15:11:04.137" rpa="false" schemaversion="3">
+<suite id="s1" name="Test-Case-Search" source="c:\Users\AVSKS\Desktop\Rb-fm-test\test-case-admin\test-case-search.robot">
+<test id="s1-t1" name="Test-case search services" line="16">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>http://127.0.0.1:8000/login</arg>
-<arg>${BROWSER}</arg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221130 17:32:18.831" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8000/login'.</msg>
-<status status="PASS" starttime="20221130 17:32:18.830" endtime="20221130 17:32:21.492"/>
+<msg timestamp="20221201 15:11:04.408" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8000/login'.</msg>
+<status status="PASS" starttime="20221201 15:11:04.408" endtime="20221201 15:11:07.030"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221130 17:32:21.492" endtime="20221130 17:32:21.611"/>
+<status status="PASS" starttime="20221201 15:11:07.030" endtime="20221201 15:11:07.161"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221130 17:32:22.613" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221130 17:32:21.612" endtime="20221130 17:32:22.613"/>
+<msg timestamp="20221201 15:11:08.163" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221201 15:11:07.162" endtime="20221201 15:11:08.163"/>
 </kw>
 <kw name="Login">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="email"]</arg>
 <arg>admin@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 17:32:22.614" level="INFO">Typing text 'admin@gmail.com' into text field '//*[@id="email"]'.</msg>
-<status status="PASS" starttime="20221130 17:32:22.614" endtime="20221130 17:32:22.754"/>
+<msg timestamp="20221201 15:11:08.164" level="INFO">Typing text 'admin@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20221201 15:11:08.163" endtime="20221201 15:11:08.292"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>123456789</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221130 17:32:22.755" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20221130 17:32:22.849" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221130 17:32:22.920" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221130 17:32:22.754" endtime="20221130 17:32:22.920"/>
+<msg timestamp="20221201 15:11:08.292" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20221201 15:11:08.337" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 15:11:08.395" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 15:11:08.292" endtime="20221201 15:11:08.395"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221130 17:32:23.923" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221130 17:32:22.920" endtime="20221130 17:32:23.923"/>
+<msg timestamp="20221201 15:11:09.397" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221201 15:11:08.395" endtime="20221201 15:11:09.397"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="userloginform"]/div[3]/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221130 17:32:23.924" level="INFO">Clicking button '//*[@id="userloginform"]/div[3]/div[2]/button'.</msg>
-<status status="PASS" starttime="20221130 17:32:23.923" endtime="20221130 17:32:25.809"/>
+<msg timestamp="20221201 15:11:09.398" level="INFO">Clicking button '//*[@id="userloginform"]/div[3]/div[2]/button'.</msg>
+<status status="PASS" starttime="20221201 15:11:09.397" endtime="20221201 15:11:11.180"/>
 </kw>
-<status status="PASS" starttime="20221130 17:32:22.613" endtime="20221130 17:32:25.810"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221130 17:32:27.312" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20221130 17:32:25.810" endtime="20221130 17:32:27.312"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="header"]/nav/ul/li[6]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221130 17:32:27.313" level="INFO">Clicking element '//*[@id="header"]/nav/ul/li[6]/a'.</msg>
-<status status="PASS" starttime="20221130 17:32:27.312" endtime="20221130 17:32:27.389"/>
+<status status="PASS" starttime="20221201 15:11:08.163" endtime="20221201 15:11:11.181"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221130 17:32:28.893" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20221130 17:32:27.390" endtime="20221130 17:32:28.893"/>
+<msg timestamp="20221201 15:11:12.685" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" starttime="20221201 15:11:11.184" endtime="20221201 15:11:12.685"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>q</arg>
+<arg>aa-001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 15:11:12.687" level="INFO">Typing text 'aa-001' into text field 'q'.</msg>
+<status status="PASS" starttime="20221201 15:11:12.687" endtime="20221201 15:11:12.794"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>q</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221201 15:11:12.795" endtime="20221201 15:11:12.825"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="header"]/nav/ul/li[6]/ul/li[6]/a</arg>
+<arg>submit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221130 17:32:28.893" level="INFO">Clicking element '//*[@id="header"]/nav/ul/li[6]/ul/li[6]/a'.</msg>
-<msg timestamp="20221130 17:32:29.200" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221130 17:32:29.201" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=107.0.5304.122)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00331ED3+2236115]
-	Ordinal0 [0x002C92F1+1807089]
-	Ordinal0 [0x001D65C0+812480]
-	Ordinal0 [0x00206586+1009030]
-	Ordinal0 [0x001FC416+967702]
-	Ordinal0 [0x00221A8C+1120908]
-	Ordinal0 [0x001FBD84+966020]
-	Ordinal0 [0x00221CA4+1121444]
-	Ordinal0 [0x002359E2+1202658]
-	Ordinal0 [0x002218A6+1120422]
-	Ordinal0 [0x001FA73D+960317]
-	Ordinal0 [0x001FB71F+964383]
-	GetHandleVerifier [0x005DE7E2+2743074]
-	GetHandleVerifier [0x005D08D4+2685972]
-	GetHandleVerifier [0x003C2BAA+532202]
-	GetHandleVerifier [0x003C1990+527568]
-	Ordinal0 [0x002D080C+1837068]
-	Ordinal0 [0x002D4CD8+1854680]
-	Ordinal0 [0x002D4DC5+1854917]
-	Ordinal0 [0x002DED64+1895780]
-	BaseThreadInitThunk [0x7716FEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77807BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77807B8E+238]
-</msg>
-<status status="FAIL" starttime="20221130 17:32:28.893" endtime="20221130 17:32:29.205"/>
+<msg timestamp="20221201 15:11:12.826" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20221201 15:11:12.826" endtime="20221201 15:11:15.066"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.206" endtime="20221130 17:32:29.206"/>
-</kw>
-<status status="FAIL" starttime="20221130 17:32:18.830" endtime="20221130 17:32:29.207"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>0.8s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.208" endtime="20221130 17:32:29.208"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//html/body/div[1]/div[1]/div[2]/div[1]/div[2]/table[1]/tbody/tr/td[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.208" endtime="20221130 17:32:29.208"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.209" endtime="20221130 17:32:29.209"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//html/body/div[1]/div[3]/div[2]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.209" endtime="20221130 17:32:29.209"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.210" endtime="20221130 17:32:29.210"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//html/body/div[3]/div/div/div[3]/a[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.210" endtime="20221130 17:32:29.210"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.210" endtime="20221130 17:32:29.211"/>
+<msg timestamp="20221201 15:11:17.068" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 15:11:15.067" endtime="20221201 15:11:17.068"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20221130 17:32:29.211" endtime="20221130 17:32:29.211"/>
+<status status="PASS" starttime="20221201 15:11:17.069" endtime="20221201 15:11:19.209"/>
 </kw>
-<status status="FAIL" starttime="20221130 17:32:18.828" endtime="20221130 17:32:29.212">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=107.0.5304.122)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00331ED3+2236115]
-	Ordinal0 [0x002C92F1+1807089]
-	Ordinal0 [0x001D65C0+812480]
-	Ordinal0 [0x00206586+1009030]
-	Ordinal0 [0x001FC416+967702]
-	Ordinal0 [0x00221A8C+1120908]
-	Ordinal0 [0x001FBD84+966020]
-	Ordinal0 [0x00221CA4+1121444]
-	Ordinal0 [0x002359E2+1202658]
-	Ordinal0 [0x002218A6+1120422]
-	Ordinal0 [0x001FA73D+960317]
-	Ordinal0 [0x001FB71F+964383]
-	GetHandleVerifier [0x005DE7E2+2743074]
-	GetHandleVerifier [0x005D08D4+2685972]
-	GetHandleVerifier [0x003C2BAA+532202]
-	GetHandleVerifier [0x003C1990+527568]
-	Ordinal0 [0x002D080C+1837068]
-	Ordinal0 [0x002D4CD8+1854680]
-	Ordinal0 [0x002D4DC5+1854917]
-	Ordinal0 [0x002DED64+1895780]
-	BaseThreadInitThunk [0x7716FEF9+25]
-	RtlGetAppContainerNamedObjectPath [0x77807BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77807B8E+238]
-</status>
+<status status="PASS" starttime="20221201 15:11:04.406" endtime="20221201 15:11:19.209"/>
 </test>
-<status status="FAIL" starttime="20221130 17:32:18.503" endtime="20221130 17:32:29.217"/>
+<status status="PASS" starttime="20221201 15:11:04.143" endtime="20221201 15:11:19.212"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test-Case-Chat">Test-Case-Chat</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Case-Search">Test-Case-Search</stat>
 </suite>
 </statistics>
 <errors>
