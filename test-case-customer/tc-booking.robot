@@ -41,7 +41,7 @@ TC-booking
 
 
 
-TC-Cancel Booked
+TC-Cancel Booking
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    2s
