@@ -1,12 +1,12 @@
 *** Settings ***
 Library        SeleniumLibrary
 *** Variables ***
-${URL}     http://127.0.0.1:8000/login
+${URL}     https://petsarakham-online.tech/login
 ${Browser}      chrome
 
 *** Keywords ***
 Login
-    Input Text         //*[@id="email"]    pompam2@gmail.com
+    Input Text         //*[@id="email"]    service-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
