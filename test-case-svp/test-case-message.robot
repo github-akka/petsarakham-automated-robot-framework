@@ -2,11 +2,11 @@
 Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login
-    Input Text         //*[@id="email"]    pompam2@gmail.com
+    Input Text         //*[@id="email"]    service-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button   
@@ -17,7 +17,7 @@ TC-Send-Message
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    1.5s
-    Go To       http://127.0.0.1:8000/login
+    Go To       https://petsarakham-online.tech/login
     Sleep    1s 
     Login
     Sleep     2s
@@ -39,7 +39,7 @@ Test-case delete a conversation
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    1.5s
-    Go To       http://127.0.0.1:8000/login
+    Go To       https://petsarakham-online.tech/login
     Sleep    1s 
     Login
     Sleep     2s
