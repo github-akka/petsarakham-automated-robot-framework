@@ -2,11 +2,11 @@
 Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000/login
+${url}        https://petsarakham-online.tech/login
 
 *** Keywords ***
 Login
-    Input Text         //*[@id="email"]    pompam2@gmail.com
+    Input Text         //*[@id="email"]    service-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button 
@@ -35,7 +35,7 @@ TC valid email and empty password
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    2s
-    Input Text         //*[@id="email"]    pompam2@gmail.com 
+    Input Text         //*[@id="email"]    service-tester@gmail.com 
     Sleep     1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button 
     Sleep    2s   
@@ -55,7 +55,7 @@ TC valid email and invalid password
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    1s
-    Input Text         //*[@id="email"]    pompam2@gmail.com 
+    Input Text         //*[@id="email"]    service-tester@gmail.com 
     Input Password    //*[@id="password"]       124525451
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
@@ -66,7 +66,7 @@ TC invalid email and invalid password
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    2s
-    Input Text         //*[@id="email"]    pompam255@gmail.com 
+    Input Text         //*[@id="email"]    service-tester55@gmail.com 
     Input Password    //*[@id="password"]       124525451
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
