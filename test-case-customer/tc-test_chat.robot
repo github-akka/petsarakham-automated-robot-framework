@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login 
@@ -16,7 +16,7 @@ TC-Send-Message
     Open Browser        ${url}       ${BROWSER}
     Maximize Browser Window
     Sleep    2s
-    Go To     http://127.0.0.1:8000/login
+    Go To     https://petsarakham-online.tech/login
     Sleep    1s 
     Login
     Sleep     2s
