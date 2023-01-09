@@ -6,7 +6,7 @@ ${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login 
-    Input Text         //*[@id="email"]    jojo@gmail.com
+    Input Text         //*[@id="email"]    user-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button   
 

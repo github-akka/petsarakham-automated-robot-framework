@@ -2,11 +2,11 @@
 Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login 
-    Input Text         //*[@id="email"]    jojo@gmail.com
+    Input Text         //*[@id="email"]    user-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1.5s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
@@ -31,11 +31,11 @@ TC-booking
     Input Text    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/div[3]/div/input    03:30PM
     Input Text    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/div[4]/div/input    12/22/2022
     Input Text    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/div[5]/div/input    13/24/2022
-    Input Text    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/div[6]/div/textarea    jojo
+    Input Text    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/div[6]/div/textarea    user-tester pet
     Sleep    2s
     Click Button    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/button
     Sleep    2s
-    Go To    http://127.0.0.1:8000/my-booking
+    Go To    https://petsarakham-online.tech/my-booking
     Sleep    2s
     Close Browser
 
@@ -59,7 +59,7 @@ TC-Cancel Booking
     Handle Alert    accept    = ok
     #Handle Alert    dismiss    = cancel
     Sleep    1s
-    Go To    http://127.0.0.1:8000/my-booking-canceled
+    Go To    https://petsarakham-online.tech/my-booking-canceled
     Sleep    2s
     Close Browser
 

@@ -9,12 +9,12 @@ Library    DateTime
 
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 
 *** Keywords ***
 Login 
-    Input Text         //*[@id="email"]    jojo@gmail.com
+    Input Text         //*[@id="email"]    service-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
     
@@ -42,7 +42,7 @@ TC-Add a Pet
     Sleep    1s
     Click Button    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/button
     Sleep    1s
-    Go To    http://127.0.0.1:8000/pet-all
+    Go To    https://petsarakham-online.tech/pet-all
     Sleep    2s    
     Close Browser
 
@@ -70,7 +70,7 @@ TC-Update a Pet
     Sleep    2s
     Click Button    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/button
     Sleep    2s
-    Go To    http://127.0.0.1:8000/pet-all
+    Go To    https://petsarakham-online.tech/pet-all
     Sleep    2s    
     Close Browser
 

@@ -2,11 +2,11 @@
 Library    SeleniumLibrary
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login
-    Input Text         //*[@id="email"]    jojo@gmail.com
+    Input Text         //*[@id="email"]    user-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button 
@@ -42,7 +42,7 @@ TC003
     Sleep    2s
     Click Link  //*[@id="header"]/nav/ul/li[7]/a 
     Wait Until Element Is Visible     //*[@id="header"]/nav/ul/li[7]/a
-    Input Text         //*[@id="email"]    jojo@gmail.com 
+    Input Text         //*[@id="email"]    user-tester@gmail.com 
     Sleep     1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button 
     Sleep    2s   
@@ -68,7 +68,7 @@ TC005
     Sleep    1s
     Click Link  //*[@id="header"]/nav/ul/li[7]/a 
     Wait Until Element Is Visible    //*[@id="header"]/nav/ul/li[7]/a 
-    Input Text         //*[@id="email"]    jojo@gmail.com 
+    Input Text         //*[@id="email"]    user-tester@gmail.com 
     Input Password    //*[@id="password"]       124525451
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
@@ -82,7 +82,7 @@ TC006
     Sleep    2s
     Click Link  //*[@id="header"]/nav/ul/li[7]/a 
     Wait Until Element Is Visible    //*[@id="header"]/nav/ul/li[7]/a 
-    Input Text         //*[@id="email"]    jojo55@gmail.com 
+    Input Text         //*[@id="email"]    user-tester55@gmail.com 
     Input Password    //*[@id="password"]       124525451
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
