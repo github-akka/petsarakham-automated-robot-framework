@@ -1,13 +1,13 @@
 *** Settings ***
 Library        SeleniumLibrary
 *** Variables ***
-${URL1}     http://127.0.0.1:8000/login
-${URL2}     http://127.0.0.1:8000/my-news 
+${URL1}     https://petsarakham-online.tech/login
+${URL2}     https://petsarakham-online.tech/my-news 
 ${Browser}      chrome
 
 *** Keywords ***
 Login
-    Input Text         //*[@id="email"]    pompam2@gmail.com
+    Input Text         //*[@id="email"]    service-tester@gmail.com
     Input Password      //*[@id="password"]    123456789
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
@@ -26,13 +26,13 @@ test-case add a news
     New
     Click Element    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[1]/div/div[2]/a    
     Sleep    1.2s
-    Input Text       title        pompam2 shop
+    Input Text       title        service-tester shop
     Input Text        body        new shop
     Choose File        image        C:/Users/AVSKS/Desktop/Rb-fm-test/img/test.png
     Sleep    2.5s
     Click Button        //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/button
     Sleep    1s
-    Go To       http://127.0.0.1:8000/my-news
+    Go To       https://petsarakham-online.tech/my-news
     Sleep        2s
     Close Browser
 
