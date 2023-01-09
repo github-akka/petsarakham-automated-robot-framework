@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}    chrome
-${url}        http://127.0.0.1:8000
+${url}        https://petsarakham-online.tech
 
 *** Keywords ***
 Login
@@ -13,7 +13,7 @@ Login
     Click Button      //*[@id="userloginform"]/div[3]/div[2]/button
 
 Chat-Page
-    Open Browser       http://127.0.0.1:8000/login    ${BROWSER} 
+    Open Browser       https://petsarakham-online.tech/login    ${BROWSER} 
     Maximize Browser Window
     Sleep    1s
     Login

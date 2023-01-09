@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}     http://127.0.0.1:8000/login
+${URL}     https://petsarakham-online.tech/login
 ${Browser}    chrome
 
 *** Keywords ***
@@ -12,7 +12,7 @@ Login
     Sleep    1s
     Click Button     //*[@id="userloginform"]/div[3]/div[2]/button
 Category-Page
-    Open Browser       http://127.0.0.1:8000/login    ${BROWSER} 
+    Open Browser       https://petsarakham-online.tech/login    ${BROWSER} 
     Maximize Browser Window
     Sleep    1s
     Login
@@ -38,7 +38,7 @@ Test-case Add a category
     Sleep     0.7s
     Click Button    //*[@id="layout"]/div[3]/section/div/div/div/div/div/div/div[2]/form/button
     Sleep     1s
-    Go To     http://127.0.0.1:8000/admin/service-categories
+    Go To     https://petsarakham-online.tech/admin/service-categories
     Sleep     2s
     Close Browser
 

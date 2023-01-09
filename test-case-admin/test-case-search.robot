@@ -1,7 +1,7 @@
 *** Settings ***
 Library        SeleniumLibrary
 *** Variables ***
-${URL}        http://127.0.0.1:8000/login
+${URL}        https://petsarakham-online.tech/login
 ${Browser}        chrome
 
 *** Keywords ***
